@@ -1,0 +1,61 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1768836395287,729,Registration,400,Bad Request,QA Auto tests 1-4,text,false,,340,343,10,10,https://qauto.forstudy.space/api/auth/signup,729,0,212
+1768836395688,341,Registration,400,Bad Request,QA Auto tests 1-8,text,false,,340,343,10,10,https://qauto.forstudy.space/api/auth/signup,341,0,111
+1768836395187,873,Registration,400,Bad Request,QA Auto tests 1-3,text,false,,340,343,10,10,https://qauto.forstudy.space/api/auth/signup,873,0,213
+1768836395788,275,Registration,400,Bad Request,QA Auto tests 1-9,text,false,,340,343,10,10,https://qauto.forstudy.space/api/auth/signup,275,0,111
+1768836395488,576,Registration,400,Bad Request,QA Auto tests 1-6,text,false,,340,343,10,10,https://qauto.forstudy.space/api/auth/signup,576,0,112
+1768836395588,481,Registration,400,Bad Request,QA Auto tests 1-7,text,false,,340,343,10,10,https://qauto.forstudy.space/api/auth/signup,481,0,163
+1768836395387,683,Registration,400,Bad Request,QA Auto tests 1-5,text,false,,340,343,10,10,https://qauto.forstudy.space/api/auth/signup,683,0,163
+1768836395887,1932,Registration,400,Bad Request,QA Auto tests 1-10,text,false,,340,343,10,10,https://qauto.forstudy.space/api/auth/signup,1932,0,172
+1768836394989,4248,Registration,201,Created,QA Auto tests 1-1,text,true,,569,343,10,10,https://qauto.forstudy.space/api/auth/signup,4248,0,212
+1768836395091,4146,Registration,201,Created,QA Auto tests 1-2,text,true,,571,343,10,10,https://qauto.forstudy.space/api/auth/signup,4146,0,102
+1768836396070,3167,Login,200,OK,QA Auto tests 1-7,text,true,,645,287,10,10,https://qauto.forstudy.space/api/auth/signin,3167,0,0
+1768836396017,3220,Login,200,OK,QA Auto tests 1-4,text,true,,647,287,10,10,https://qauto.forstudy.space/api/auth/signin,3220,0,0
+1768836396060,3177,Login,200,OK,QA Auto tests 1-3,text,true,,649,287,10,10,https://qauto.forstudy.space/api/auth/signin,3177,0,0
+1768836396070,3167,Login,200,OK,QA Auto tests 1-5,text,true,,651,287,10,10,https://qauto.forstudy.space/api/auth/signin,3167,0,0
+1768836396065,3172,Login,200,OK,QA Auto tests 1-6,text,true,,645,287,10,10,https://qauto.forstudy.space/api/auth/signin,3172,0,0
+1768836396063,3174,Login,200,OK,QA Auto tests 1-9,text,true,,651,287,10,10,https://qauto.forstudy.space/api/auth/signin,3174,0,0
+1768836396029,3208,Login,200,OK,QA Auto tests 1-8,text,true,,645,287,10,10,https://qauto.forstudy.space/api/auth/signin,3208,0,0
+1768836397820,1780,Login,200,OK,QA Auto tests 1-10,text,true,,649,287,10,10,https://qauto.forstudy.space/api/auth/signin,1780,0,0
+1768836399237,363,Add car,201,Created,QA Auto tests 1-7,text,true,,526,341,10,10,https://qauto.forstudy.space/api/cars,363,0,0
+1768836399237,363,Add car,201,Created,QA Auto tests 1-4,text,true,,526,343,10,10,https://qauto.forstudy.space/api/cars,363,0,0
+1768836399237,363,Add car,201,Created,QA Auto tests 1-9,text,true,,526,347,10,10,https://qauto.forstudy.space/api/cars,363,0,0
+1768836399237,363,Add car,201,Created,QA Auto tests 1-8,text,true,,526,341,10,10,https://qauto.forstudy.space/api/cars,363,0,0
+1768836399237,363,Add car,201,Created,QA Auto tests 1-3,text,true,,526,345,10,10,https://qauto.forstudy.space/api/cars,363,0,0
+1768836399237,363,Add car,201,Created,QA Auto tests 1-5,text,true,,524,346,10,10,https://qauto.forstudy.space/api/cars,363,0,0
+1768836399237,363,Add car,201,Created,QA Auto tests 1-6,text,true,,526,341,10,10,https://qauto.forstudy.space/api/cars,363,0,0
+1768836399601,0,Debug Sampler,200,OK,QA Auto tests 1-3,text,true,,672,0,10,10,null,0,0,0
+1768836399601,0,Debug Sampler,200,OK,QA Auto tests 1-7,text,true,,660,0,10,10,null,0,0,0
+1768836399601,0,Debug Sampler,200,OK,QA Auto tests 1-6,text,true,,660,0,10,10,null,0,0,0
+1768836399601,0,Debug Sampler,200,OK,QA Auto tests 1-8,text,true,,660,0,10,10,null,0,0,0
+1768836399601,0,Debug Sampler,200,OK,QA Auto tests 1-5,text,true,,678,0,10,10,null,0,0,0
+1768836399601,0,Debug Sampler,200,OK,QA Auto tests 1-9,text,true,,678,0,10,10,null,0,0,0
+1768836399601,0,Debug Sampler,200,OK,QA Auto tests 1-4,text,true,,666,0,10,10,null,0,0,0
+1768836399601,715,Add expenses,400,Bad Request,QA Auto tests 1-9,text,false,,430,404,10,10,https://qauto.forstudy.space/api/expenses,715,0,0
+1768836399602,714,Add expenses,400,Bad Request,QA Auto tests 1-4,text,false,,430,400,10,10,https://qauto.forstudy.space/api/expenses,714,0,0
+1768836399601,715,Add expenses,400,Bad Request,QA Auto tests 1-3,text,false,,430,402,10,10,https://qauto.forstudy.space/api/expenses,715,0,0
+1768836399237,1079,Login,200,OK,QA Auto tests 1-2,text,true,,651,287,10,10,https://qauto.forstudy.space/api/auth/signin,1079,0,0
+1768836399237,1079,Login,200,OK,QA Auto tests 1-1,text,true,,645,287,10,10,https://qauto.forstudy.space/api/auth/signin,1079,0,0
+1768836399601,715,Add expenses,400,Bad Request,QA Auto tests 1-5,text,false,,430,404,10,10,https://qauto.forstudy.space/api/expenses,715,0,0
+1768836399601,722,Add expenses,400,Bad Request,QA Auto tests 1-6,text,false,,430,398,10,10,https://qauto.forstudy.space/api/expenses,722,0,0
+1768836399601,722,Add expenses,400,Bad Request,QA Auto tests 1-7,text,false,,430,398,10,10,https://qauto.forstudy.space/api/expenses,722,0,0
+1768836399601,722,Add expenses,400,Bad Request,QA Auto tests 1-8,text,false,,430,398,10,10,https://qauto.forstudy.space/api/expenses,722,0,0
+1768836399601,722,Add car,201,Created,QA Auto tests 1-10,text,true,,526,345,10,10,https://qauto.forstudy.space/api/cars,722,0,0
+1768836400324,0,Debug Sampler,200,OK,QA Auto tests 1-10,text,true,,673,0,10,10,null,0,0,0
+1768836400317,102,Logout,200,OK,QA Auto tests 1-5,text,true,,481,269,10,10,https://qauto.forstudy.space/api/auth/logout,102,0,0
+1768836400317,102,Logout,200,OK,QA Auto tests 1-4,text,true,,481,265,10,10,https://qauto.forstudy.space/api/auth/logout,102,0,0
+1768836400317,102,Logout,200,OK,QA Auto tests 1-9,text,true,,481,269,10,10,https://qauto.forstudy.space/api/auth/logout,102,0,0
+1768836400317,102,Logout,200,OK,QA Auto tests 1-3,text,true,,481,267,10,10,https://qauto.forstudy.space/api/auth/logout,102,0,0
+1768836400317,102,Add car,201,Created,QA Auto tests 1-2,text,true,,526,347,10,10,https://qauto.forstudy.space/api/cars,102,0,0
+1768836400419,0,Debug Sampler,200,OK,QA Auto tests 1-2,text,true,,678,0,10,10,null,0,0,0
+1768836400323,108,Logout,200,OK,QA Auto tests 1-7,text,true,,481,263,6,6,https://qauto.forstudy.space/api/auth/logout,108,0,0
+1768836400323,108,Logout,200,OK,QA Auto tests 1-6,text,true,,481,263,6,6,https://qauto.forstudy.space/api/auth/logout,108,0,0
+1768836400323,108,Logout,200,OK,QA Auto tests 1-8,text,true,,481,263,6,6,https://qauto.forstudy.space/api/auth/logout,108,0,0
+1768836400324,107,Add expenses,400,Bad Request,QA Auto tests 1-10,text,false,,430,402,6,6,https://qauto.forstudy.space/api/expenses,107,0,0
+1768836400317,114,Add car,201,Created,QA Auto tests 1-1,text,true,,526,341,6,6,https://qauto.forstudy.space/api/cars,114,0,0
+1768836400432,0,Debug Sampler,200,OK,QA Auto tests 1-1,text,true,,660,0,6,6,null,0,0,0
+1768836400432,90,Logout,200,OK,QA Auto tests 1-10,text,true,,481,267,3,3,https://qauto.forstudy.space/api/auth/logout,90,0,0
+1768836400432,90,Add expenses,400,Bad Request,QA Auto tests 1-1,text,false,,430,398,3,3,https://qauto.forstudy.space/api/expenses,90,0,0
+1768836400420,102,Add expenses,400,Bad Request,QA Auto tests 1-2,text,false,,430,404,3,3,https://qauto.forstudy.space/api/expenses,102,0,0
+1768836400523,91,Logout,200,OK,QA Auto tests 1-2,text,true,,481,269,2,2,https://qauto.forstudy.space/api/auth/logout,91,0,0
+1768836400523,91,Logout,200,OK,QA Auto tests 1-1,text,true,,481,263,2,2,https://qauto.forstudy.space/api/auth/logout,91,0,0
