@@ -1,0 +1,234 @@
+{
+  "info": {
+    "_postman_id": "903bb9aa-4851-4277-9f3d-44ee8eed5aa3",
+    "name": "MongoDB Data API Yudina",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50415439",
+    "_collection_link": "https://go.postman.co/collection/50415439-903bb9aa-4851-4277-9f3d-44ee8eed5aa3?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Create my document",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"The document is created\", function () {\r",
+              "    pm.response.to.have.status(201); \r",
+              "});\r",
+              "\r",
+              "pm.test(\"The response contains an ID or message\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData).to.be.an('object'); \r",
+              "});\r",
+              "\r",
+              "let jsonData = pm.response.json();\r",
+              "\r",
+              "if (jsonData._id) {\r",
+              "    pm.collectionVariables.set(\"id\", jsonData._id);\r",
+              "    console.log(\"ID saved: \" + jsonData._id);\r",
+              "}"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n//   \"_id\": \"65bf9876543210fedcba4323\",\r\n  \"string_data\": \"New Al document test12!\",\r\n  \"int32_data\": 42,\r\n  \"double_data\": 150.95,\r\n  \"boolean_data\": true,\r\n  \"array_data\": [\"item1\", \"item2\", 900],\r\n  \"object_data\": {\r\n    \"key\": \"value\",\r\n    \"active\": true\r\n  },\r\n  \"date_data\": \"2024-05-20T10:00:00Z\",\r\n  \"null_data\": null,\r\n  \"objectId_reference\": \"507f1f77bcf86cd799439022\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/my_сollection_testal",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "my_сollection_testal"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get my document by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/my_сollection_testal/search/query?_id=6982106cfe226ea13ee4340a",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "my_сollection_testal",
+            "search",
+            "query"
+          ],
+          "query": [
+            {
+              "key": "_id",
+              "value": "6982106cfe226ea13ee4340a"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update my document",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"The document is updated\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Server returned the data\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData).to.be.an('object');\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"price\": 999,\r\n  \"status\": \"updated_finally\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/my_сollection_testal/{{id}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "my_сollection_testal",
+            "{{id}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete document by ID",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"The document is deleted\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"The response contains confirmation of the deletion\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.message).to.not.be.null;\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/my_сollection_testal/{{id}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "my_сollection_testal",
+            "{{id}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get my document by filter",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "pm.request.url.addQueryParams(\"string_data=test11\");\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/my_сollection_testal/search/query?int32_data=42",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "my_сollection_testal",
+            "search",
+            "query"
+          ],
+          "query": [
+            {
+              "key": "int32_data",
+              "value": "42"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "id",
+      "value": ""
+    }
+  ]
+}
